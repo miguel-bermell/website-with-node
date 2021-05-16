@@ -120,7 +120,7 @@ function mostrarCotizacionHTML(cotizacion) {
 
   const ultimaActualizacion = document.createElement("p");
   ultimaActualizacion.innerHTML = `<p>Last update: <span>${LASTUPDATE}</span></p>`;
-  imageCoin.classList.add("img_coin", "col-12", "col-md-6");
+  imageCoin.classList.add("img_coin", "col-12", "col-md-5");
   imageCoin.innerHTML = `<img src="https://www.cryptocompare.com/${IMAGEURL}" alt="cripto">`;
 
   resultado.appendChild(precio);
