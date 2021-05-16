@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CriptoInfo</title>
+  <%- include('partials/head.html') %>
+</head>
+
+<body>
+  <%- include('partials/navigation.html') %>
+
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-12 col-md">
+          <img class="animate__animated animate__bounce"
+            src="https://images.unsplash.com/photo-1559526324-593bc073d938?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+        </div>
+        <div class="col-12 col-md">
+          <form id="formulario">
+            <div class="row">
+              <div>
+                <label>SELECT CURRENCY</label>
+                <select class="w-100" id="moneda" name="moneda">
+                  <option value="">Select Currency</option>
+                  <option value="USD">American dollar</option>
+                  <option value="MXN">Mexican peso</option>
+                  <option value="GBP">Pounds</option>
+                  <option value="EUR">Euros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Choose your Cryptocurrency</label>
+                <select class="w-100" id="criptomonedas" name="criptomoneda">
+                  <option value="">Select cryptocurrency</option>
+                </select>
+              </div>
+            </div>
+            <input class="btn btn-secondary w-100" type="submit" value="Stock Exchange" />
+            <div class="row">
+              <div id="resultado" class="resultado col-12 col-md-6"></div>
+              <div id="image-coin"></div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION BOTTOM -->
+    <%- include('partials/bottom.html') %>
+
+      <!-- FOOTER -->
+      <%- include('partials/footer.html') %>
+
+        <!-- JS -->
+        <%- include('partials/scripts.html') %>
+          <!-- CUSTOM JS -->
+          <script src="/js/app.js"></script>
+</body>
+
+</html>
